@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>05-lab-guide</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style>
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+      html {
+        color: #373D49;
+        line-height: 1.5rem;
+      }
+      h2 {
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+      }
+      code {
+        color: #c7254e;
+        background: #f9f2f4;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      a:hover {
+        color: #7800e9;
+      }
+  </style>
+</head>
+<body>
+<h2 id="exercise-05-lab-form-fields-and-user-input">Exercise 05-lab: form fields and user input</h2>
+<p>This week we’re using a different format for these instructions, so the exercise is broken up into tasks.</p>
+<h3 id="introduction">Introduction</h3>
+<p>Rather than having a generic text input, there are specific input field types, many of which also determine how mobiles handle input. Some of these were introduced with HTML5:</p>
+<ul>
+<li>color</li>
+<li>date</li>
+<li>email</li>
+<li>number</li>
+<li>range</li>
+<li>search</li>
+<li>tel</li>
+<li>time</li>
+<li>url</li>
+</ul>
+<p>Here’s an example of the syntax: <code>&lt;input type="color" value="#ff0000"&gt;</code> - the <code>value</code> attribute is optional, but can be used to set a default.</p>
+<p>These input types will only accept <strong>specific input</strong> so are good for preventing some user errors e.g. an input of type “number” will only accept… you guessed it: numbers! If you try to type in a letter, nothing will show up. A “url” type field needs the full “https://” or “http://” prefix.</p>
+<p>These fields also have built-in warnings that show up in the browser, which you can customise using JavaScript.</p>
+<p>If you have errors, don’t forget to use <code>console.log()</code> to check your code at various points.</p>
+<hr />
+<h3 id="task-1---create-an-interface">Task 1 - Create an interface</h3>
+<p>Start with an “index.html” file. Add an <code>h1</code> tag containing the text “HTML5 forms:”, with an <code>id="date"</code>.</p>
+<p>Add a <code>&lt;form&gt;</code> element with an <code>id="the-form"</code> containing:</p>
+<ol type="1">
+<li>a <code>&lt;fieldset&gt;</code> element, containing…</li>
+<li>a <code>&lt;label&gt;</code> tag with the attribute <code>for="datePicker"</code> (instead of just adding text next to the form field, a <code>label</code> tag makes a form field accessible by relating the field’s description directly to the field), an input of type “date” with an <code>id="datePicker"</code></li>
+<li>another <code>&lt;fieldset&gt;</code> element (you use these to contain related input fields, and can style them to help make forms more logical and user-friendly)</li>
+<li>inside this second <code>fieldset</code>, two inputs of type “color” and “range”. The “range” syntax is <code>&lt;input type="range" min="0" max="100"&gt;</code> - the <code>min</code> and <code>max</code> attributes can be set as required, but use the values shown here. Set the <code>value</code> attribute of the <code>color</code> input to a default: <code>value="#eeccff"</code> and give it an ID of “colour”.</li>
+</ol>
+<p>Finally, below the form, add a paragraph tag containing the text “50” with an id of “the-value” and a class of “value”.</p>
+<p>In a “styles.css” file, add:</p>
+<ol type="1">
+<li>a style block for <code>.value</code> that sets its <code>width</code> to <code>50%</code>, and <code>text-align</code> to “center”</li>
+<li>a style block for <code>fieldset</code> that simply adds a bottom margin of <code>0.5em</code>.</li>
+</ol>
+<p>Validate your HTML and check that the fields are usable.</p>
+<hr />
+<h3 id="task-2---display-the-input-values-on-the-page">Task 2 - Display the input values on the page</h3>
+<p>In a “scripts.js” file add the line: <code>"use-strict";</code>. This will throw up messages in the console that help prevent mistakes and sloppy code.</p>
+<p>Below the line above, store a reference to the form in a <code>const</code> named <code>theForm</code> (using <code>document.getElementById ("the-form")</code> as in other exercises), then add two more <code>const</code> references - one to the “date” ID called “theDate” and the other called “getDate” using <code>document.querySelector</code> to store a reference to <code>input[type="date"]</code> (<code>document.querySelector</code> can use CSS syntax).</p>
+<p>Add an <strong>event listener</strong> that listens for a <code>"change"</code> event, and calls a function “showDate” that sets a variable “d” to a new date: <code>let d = new Date(getDate.value);</code></p>
+<p>Now add the newly-entered date value to the <code>h1</code> tag’s <code>innerText</code> - hints:</p>
+<ol type="1">
+<li>for a human readable date (e.g. “Wed Nov 07 2018”) use <code>d.toDateString()</code>.</li>
+<li>preserve the <code>h1</code> tag <code>innerText</code> in a variable before adding the date, and use template literal syntax (inside backticks you can use <code>${}</code> variable interpolation) to add the new date after the original text</li>
+<li>“showDate” could call another function “parseDate” that takes a date as a parameter and adds it to the <code>h1</code> tag <code>innerText</code> (preserved in the previous step)</li>
+</ol>
+<p>To pre-populate the <code>h1</code> tag with today’s date, you could then also call “parseDate” with today’s date as a parameter:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a>  <span class="kw">let</span> today <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>()<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="at">parseDate</span>(today)<span class="op">;</span></span></code></pre></div>
+<p>The date in the <code>h1</code> heading should change when the user picks a new date. The date should be formatted as the following example: “Wed Nov 07 2018”.</p>
+<hr />
+<h3 id="task-3---modify-an-interface-element-using-a-color-input">Task 3 - Modify an interface element using a “color” input</h3>
+<p>Store <code>const</code> references by ID to the <code>color</code> input field (ID “colour”) and to the paragraph (ID “the-value”).</p>
+<p>Create a function <code>setColor</code> that simply sets the paragraph <code>.style</code> property to the <code>.value</code> property of the <code>color</code> input.</p>
+<p>Add an event listener to the form element that detects “input”, and calls “setColor”.</p>
+<p>You can then also call <code>setColor();</code> separately to set the paragraph background to the <code>color</code> field default.</p>
+<p>The paragraph’s background colour should change when the user picks <strong>a</strong> colour from the browser’s colour dialogue.</p>
+<hr />
+<h3 id="task-4---modify-an-interface-element-using-a-range-input">Task 4 - Modify an interface element using a “range” input</h3>
+<p>Add an event listener to the “range” input element that captures the element’s value when it detects “input”, and calls a function “rangeAction”, that:</p>
+<ol type="1">
+<li>shows the value on the page immediately in the “innerText” of the paragraph tag</li>
+<li>applies this value to its width, using <code>.style.width</code>.</li>
+</ol>
+<p>The paragraph width should change as the user moves the range slider.</p>
+<hr />
+<p>If you managed to make these exercises work, experiment with handling and displaying input from other field types, or spend some time styling the inputs and page elements to make them more appealing.</p>
+<hr />
+<p><strong>05 Lab learning outcomes</strong>:</p>
+<ul>
+<li>see how HTML5 form fields work by default</li>
+<li>use form fields to collect user input</li>
+<li>use <code>document.querySelector</code></li>
+<li>handle user input with JavaScript</li>
+<li>reflect user input directly on the page without reloading</li>
+</ul>
+<p>Input fields are the primary method for getting user input, so it is essential to choose the correct type, depending on what you want the user to enter. Handling these on the page with JavaScript and providing feedback without (or before) calling any server scripts or reloading the page is one of the elements of modern web development.</p>
+<p>Manipulating the Document Object Model (DOM) in this way is one approach to avoiding excessive to-and-fro messages between the client (browser) and the web server, which makes user interaction more immediate and intuitive. If you use local storage (in a future lab) to retain user preferences between browser sessions, their choices can be made to persist in that user’s browser.</p>
+</body>
+</html>
