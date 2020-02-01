@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>02-lab-guide</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  
+  code {
+    background: cyan;
+  }
+  
+  
+  
+  
+  </style>
+</head>
+<body>
+<p>For all exercises, <a href="https://validator.w3.org/"><strong>validate</strong> your HTML</a> and use <strong>inspect</strong> in the browser (Chrome!!) to check the <strong>console messages</strong>.</p>
+<p>This week may be a challenge - use the <strong>02 Lecture</strong> slides for reference - if you complete everything today, well done!</p>
+<p>If not, don’t worry - use your <strong>Self-directed Learning Time (SDL)</strong> to work on your code before next week’s lab. If you get stuck, <strong>keep trying</strong>! The simplest version of the solutions will be demonstrated next week.</p>
+<hr />
+<h2 id="exercise-1-getting-familiar-with-html5-and-css">Exercise 1: getting familiar with HTML5 and CSS</h2>
+<ol type="1">
+<li>Create a basic HTML file <code>index.html</code>, a CSS file <code>styles.css</code> and a “js” folder containing a JavaScript file <code>scripts.js</code></li>
+<li>Mark up a simple 5-item menu with “<code>a</code>” tag links (<code>&lt;a href="#"&gt;link text&lt;/a&gt;</code> tags) inside a <code>nav</code> tag. Keep it simple and don’t use any other tags to do this</li>
+<li>Style the menu to appear horizontally across the top of the page using <strong>CSS flexbox</strong> (<a href="https://daveeveritt.github.io/flexbox-cheatsheet/">Flexbox cheat sheet</a>)</li>
+<li>create a <code>:hover</code> style for the menu items</li>
+<li>use a CSS <code>transition</code> to make the menu item background fade to another colour on hover (<strong>clue:</strong> the CSS <code>transition</code> rule goes on the “<code>a</code>” tag selector rule, <strong>not</strong> the <code>a:hover</code> selector rule)</li>
+</ol>
+<hr />
+<ol type="1">
+<li>Add a <code>header</code> section above the <code>nav</code> tag, containing an <code>h1</code> tag with a few words</li>
+<li>Add a <code>main</code> tag below the <code>nav</code> tag, containing a paragraph “<code>p</code>” tag with the text “Click me to say hello”</li>
+<li>Adjust the <code>body</code> and <code>h1</code> margins so that <code>body</code>, <code>header</code>, <code>nav</code> and <code>main</code> have no gaps between them</li>
+<li>Use flexbox (cheat sheet below) to stack the “<code>a</code>” tags in the <code>nav</code> vertically, and set a width of <code>15%</code> to the nav tag and <code>85%</code> to the <code>main</code> tag</li>
+<li>Set left-right <code>padding</code> on the <code>main</code> tag, then use <code>float: left;</code> and <code>float: right;</code> on the <code>nav</code> and <code>main</code> with <code>box-sizing</code> to contain the <code>main</code> tag padding</li>
+</ol>
+<hr />
+<h2 id="exercise-2-simple-javascript-interaction">Exercise 2: simple JavaScript interaction</h2>
+<ol type="1">
+<li>Add an <code>id</code> attribute of <code>"hello"</code> to the “<code>p</code>” tag</li>
+<li>use <code>document.getElementById();</code> to set a JavaScript <code>const</code> property named <code>hello</code> to store a reference to the paragraph</li>
+<li>attach an <code>eventListener(){}</code> to the <code>hello</code> variable that listens for a <code>"click"</code> event and calls a named function <code>greeting</code></li>
+<li>write a <code>greeting</code> function that sends a message to the console using <code>console.log();</code></li>
+<li>add another line inside the <code>greeting</code> function that changes the text of the paragraph to a text string of your own</li>
+</ol>
+<hr />
+<p>Nice work! You have now completed the <strong>02 Lab learning outcomes</strong>:</p>
+<ul>
+<li>Link a stylesheet to an HTML file</li>
+<li>Successfully add styles to change HTML elements</li>
+<li>Understand basic CSS syntax and flexbox</li>
+<li>Use different CSS selectors to target specific tags and states</li>
+<li>Create HTML semantic markup that can be re-arranged using CSS</li>
+<li>Handle a simple user interaction using a JavaScript event listener</li>
+<li>Understand how <code>getElementById and</code> and <code>eventListener</code> work together</li>
+</ul>
+<p>These links will help you with the code:</p>
+<ul>
+<li><a href="https://daveeveritt.github.io/flexbox-cheatsheet/">Flexbox cheat sheet</a></li>
+<li><a href="https://ctec3905.github.io/js-get-elements/">Targeting HTML and changing CSS with JS</a>: this example page (<a href="https://github.com/CTEC3905/js-get-elements">source code on GitHub</a>) shows how to target various HTML elements and make changes to CSS via JavaScript. It uses <code>addEventListener()</code> and various types of <code>getElement(s)By</code> functions. It will help you understand <strong>how to use JavaScript</strong> to <strong>interact with the DOM</strong>.</li>
+</ul>
+</body>
+</html>

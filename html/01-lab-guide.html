@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>01-lab-guide</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+  
+  code {
+    background: cyan;
+  }
+  
+  
+  
+  
+  </style>
+</head>
+<body>
+<h2 id="exercise-1-introduction-to-using-the-browser">Exercise 1: introduction to using the browser</h2>
+<ol type="1">
+<li>Open the Chrome Browser (<strong>NOT</strong> Internet Explorer!)</li>
+<li>Open this website to analyse: <a href="https://developer.github.com/">developer.github.com</a></li>
+<li>Use “View Page Source” and also “Inspect” (tutor to guide)</li>
+<li>Note the difference between how the source code appears (tutor to demonstrate)</li>
+<li>Make some notes about how you think the site works technically (tutor to give examples)</li>
+</ol>
+<hr />
+<h2 id="exercise-2-introduction-to-workflow">Exercise 2: introduction to workflow</h2>
+<ol type="1">
+<li>Create a folder for this exercise in a place of your choice, making sure you can locate it again</li>
+<li>Open the empty folder in a programmer’s text editor - if Atom isn’t installed, go to <a href="http://software.dmu.ac.uk/">software.dmu.ac.uk</a> and select it for download, using the arrow on the right, then double-click to load it</li>
+<li>Make a simple “index.html” page using your current knowledge (you can look things up if you’ve never done this before or use this <a href="https://www.w3schools.com/html/html5_intro.asp">empty HTML page example</a>)</li>
+<li>Add some visible content e.g. inside an opening and closing HTML level 1 heading tag (<code>&lt;h1&gt;</code>)</li>
+<li>Load the page in the Chrome browser</li>
+</ol>
+<hr />
+<ol type="1">
+<li>Add some content to the page and <strong>reload it in the browser</strong> each time you make a change (Windows/Mac: ctrl-R/cmd-R)</li>
+<li>Check your code in the <a href="https://validator.w3.org/">HTML validator</a> and correct any errors (repeat by validating each time you add more code)</li>
+<li>Create a “styles.css” file inside a “css” folder and link it in your HTML file by adding this line in the HTML <code>head</code> section: <code>&lt;link rel="stylesheet" href="css/styles.css"&gt;</code>. Note how the URL in the <code>href</code> attribute opens the “css” folder before requesting the file!</li>
+<li>Add the following line to your “styles.css” file: <code>body { background: #f99; }</code> and reload the HTML page</li>
+<li>Try some more styles in your “styles.css” file, reloading the page each time</li>
+</ol>
+<hr />
+<ol type="1">
+<li>Create a “scripts.js” file inside a “js” folder and link to it in your HTML file just before the closing <code>&lt;/body&gt;</code> tag like this: <code>&lt;script src="js/scripts.js"&gt;&lt;/script&gt;</code></li>
+<li>Add the following to your “scripts.js” file: <code>alert("Hello!");</code> and reload the page in the browser</li>
+<li>If the above works, change it to: <code>console.log("Hello!");</code></li>
+<li>Reload the page, open the Inspector and check the browser console panel (it should say “Hello!”)</li>
+<li>Close down the browser, text editor and the folder containing your code</li>
+<li>Find the folder again open it in the text editor Atom, and also open the HTML page in the browser</li>
+</ol>
+<hr />
+<p>You have now completed the basic workflow for writing and running your code in a web browser.</p>
+<p>NOTE: if you’ve finished, please set up a GitHub account if you don’t have one. <strong>Don’t</strong> connect to the GitHub Classroom yet.</p>
+<p>You should also <strong>revisit the lecture slides</strong> and try the CSS styling.</p>
+</body>
+</html>
