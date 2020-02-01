@@ -6,3 +6,4 @@ Container for lab instructions.
 - [Lab 02: Introduction to CSS and JavaScript](https://ctec3905.github.io/labs/html/02-lab-guide.html)
 - [Lab 03: Git and GitHub](https://ctec3905.github.io/labs/html/03-lab-guide.html)
 
+More to come here.
