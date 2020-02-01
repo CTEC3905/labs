@@ -22,4 +22,7 @@
   a:hover {
     color: #7800e9;
   }
+  li {
+    margin-top: .5rem;
+  }
 </style>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>06-lab</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style>
+    html {
+      color: #373D49;
+      line-height: 1.5rem;
+    }
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.25em;
+    }
+    h2 {
+      font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 2em;
+      line-height: 2.5rem;
+    }
+    code {
+      color: #c7254e;
+      background: #f9f2f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    a:hover {
+      color: #7800e9;
+    }
+    li {
+      margin-top: .5rem;
+    }
+  </style>
+</head>
+<body>
+<h2 id="exercise-06-lab">Exercise 06-lab:</h2>
+<h3 id="introduction">Introduction</h3>
+<p>We’re covering two topics in the labs this week: <strong>CSS grid</strong> and handling <strong>locaStorage</strong> with JavaScript. However, this time most of the code is supplied and functions as it should, so you can just experiment with it, as explained below.</p>
+<ul>
+<li>Javascript: <code>console.log()</code> to check your code</li>
+<li>HTML: validate your code every few changes</li>
+</ul>
+<hr />
+<h3 id="task-1---css-grid-layout">Task 1 - CSS grid layout</h3>
+<p>CSS Grid is complex and fairly new, but it provides the layout tools that front-end developers have wanted for some time.</p>
+<p>You can reposition any element in the grid wherever you like, using a breakpoint.</p>
+<ol type="1">
+<li>Either clone or download the code from <a href="https://GitHub.com/ctec3905/06-lab-cssgrid/">GitHub 06-lab-cssgrid</a> and run it in a browser. Change the window width to see the mobile and larger versions of the layout.</li>
+<li>Add some text and image content inside the grid elements, and a 4-item menu in the <code>nav</code> tag, using flexbox (flexbox can be used to order elements <em>inside</em> a grid container) and resize the window in and out to test your new page.</li>
+<li>Add another breakpoint above the 600px one, to rearrange the grid content areas for larger screen sizes. This doesn’t need to make design or logical sense - it’s just an experiment.</li>
+<li>If you already started your site and have content, work out how you could arrange the main content areas using CSS grid.</li>
+</ol>
+<p>You should have a responsive grid-based layout that works at mobile sizes, then at tablet, then at desktop widths (mobile styles plus two breakpoints).</p>
+<hr />
+<h3 id="task-2---localstorage">Task 2 - localStorage</h3>
+<p>Last week’s exercise demonstrated how to manipulate the Document Object Model (DOM) after receiving user input. This week, you will learn how to store and retrieve data to/from the browser’s local storage data store, so that is is retained between between browser sessions and can be used on multiple pages.</p>
+<p>Think of it as an insecure but ‘free’ and server-less data store (Chrome has a 5MB limit, whereas cookies can store far less than even 1MB).</p>
+<ol type="1">
+<li>Either clone or download the code from <a href="https://github.com/CTEC3905/06-lab-localStorage/">GitHub 06-lab-localStorage</a>, load it in a browser and open Chrome’s console in the web inspector.</li>
+<li>You’ll see three <strong>data objects</strong> of increasing complexity. These data objects were added to the browser’s <code>localStorage</code> when the page loaded (although they could have been taken from user input and then stored, we kept this code simple as possible). Examine this data to see its structure. This is the <strong>same format</strong> as many external JSON API data sources, which will be covered in a future lab.</li>
+<li>Look through the code and read the comments so you can understand how data is added to localStorage, and how to extract part or all of it.</li>
+<li>In the JavaScript file (work out which one from the HTML <code>script</code> tag!), change one of the values being added to localStorage and run the page again.</li>
+<li>Add another item to one of the data objects (take care to omit the trailing comma on the final key-value pair or final object.</li>
+<li>Style the appearance of the data using CSS - you could keep the existing list tag or use a table.</li>
+</ol>
+<p>Your file should generate some different data, which is retrieved and displayed in your own way and, using your own CSS styles.</p>
+<hr />
+<h2 id="lab-learning-outcomes">06 Lab learning outcomes:</h2>
+<ul>
+<li>learn one method of laying out CSS grids</li>
+<li>understand the CSS grids can be changed with breakpoints</li>
+<li>use JavaScript to set and retrieve data from the browser</li>
+<li>understand why <code>JSON.stringify</code> and <code>JSON.parse</code> are required for writing and reading localStorage</li>
+<li>navigate around a JavaScript data object that uses JSON-like formatting</li>
+</ul>
+</body>
+</html>
