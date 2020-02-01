@@ -1,9 +1,8 @@
-# labs
+# CTEC3905 Labs
 
-Container for markdown lab instructions.
+Container for lab instructions.
 
-- [Lab 03 guide](https://ctec3905.github.io/labs/03-lab-guide.md)
+- [Lab 01: Workflow, Environmnet, Structure](https://ctec3905.github.io/labs/html/01-lab-guide.html)
+- [Lab 02: Introduction to CSS and JavaScript](https://ctec3905.github.io/labs/html/02-lab-guide.html)
+- [Lab 03: Git and GitHub](https://ctec3905.github.io/labs/html/03-lab-guide.html)
 
-
-
-Test

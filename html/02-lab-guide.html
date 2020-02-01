@@ -15,14 +15,23 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <style>
-  
-  code {
-    background: cyan;
-  }
-  
-  
-  
-  
+      html {
+        color: #373D49;
+        line-height: 1.5rem;
+      }
+      h2 {
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+      }
+      code {
+        color: #c7254e;
+        background: #f9f2f4;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      a:hover {
+        color: #7800e9;
+      }
   </style>
 </head>
 <body>
@@ -34,7 +43,7 @@
 <ol type="1">
 <li>Create a basic HTML file <code>index.html</code>, a CSS file <code>styles.css</code> and a “js” folder containing a JavaScript file <code>scripts.js</code></li>
 <li>Mark up a simple 5-item menu with “<code>a</code>” tag links (<code>&lt;a href="#"&gt;link text&lt;/a&gt;</code> tags) inside a <code>nav</code> tag. Keep it simple and don’t use any other tags to do this</li>
-<li>Style the menu to appear horizontally across the top of the page using <strong>CSS flexbox</strong> (<a href="https://daveeveritt.github.io/flexbox-cheatsheet/">Flexbox cheat sheet</a>)</li>
+<li>Style the menu to appear horizontally across the top of the page using <strong>CSS flexbox</strong> (<a href="http://flexbox.malven.co/">Flexbox cheat sheet</a>)</li>
 <li>create a <code>:hover</code> style for the menu items</li>
 <li>use a CSS <code>transition</code> to make the menu item background fade to another colour on hover (<strong>clue:</strong> the CSS <code>transition</code> rule goes on the “<code>a</code>” tag selector rule, <strong>not</strong> the <code>a:hover</code> selector rule)</li>
 </ol>
@@ -68,7 +77,7 @@
 </ul>
 <p>These links will help you with the code:</p>
 <ul>
-<li><a href="https://daveeveritt.github.io/flexbox-cheatsheet/">Flexbox cheat sheet</a></li>
+<li><a href="http://flexbox.malven.co/">Flexbox cheat sheet</a></li>
 <li><a href="https://ctec3905.github.io/js-get-elements/">Targeting HTML and changing CSS with JS</a>: this example page (<a href="https://github.com/CTEC3905/js-get-elements">source code on GitHub</a>) shows how to target various HTML elements and make changes to CSS via JavaScript. It uses <code>addEventListener()</code> and various types of <code>getElement(s)By</code> functions. It will help you understand <strong>how to use JavaScript</strong> to <strong>interact with the DOM</strong>.</li>
 </ul>
 </body>

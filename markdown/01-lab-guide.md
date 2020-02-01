@@ -37,6 +37,6 @@
 
 You have now completed the basic workflow for writing and running your code in a web browser.
 
-NOTE: if you've finished, please set up a GitHub account if you don't have one. **Don't** connect to the GitHub Classroom yet.
+NOTE: if you've finished, please set up a GitHub account if you don't have one.
 
 You should also **revisit the lecture slides** and try the CSS styling.

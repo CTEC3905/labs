@@ -10,7 +10,7 @@ If not, don't worry - use your **Self-directed Learning Time (SDL)** to work on 
 
 1.  Create a basic HTML file `index.html`, a CSS file `styles.css` and a “js” folder containing a JavaScript file `scripts.js`
 2.  Mark up a simple 5-item menu with “`a`” tag links (`<a href="#">link text</a>` tags) inside a `nav` tag. Keep it simple and don’t use any other tags to do this
-3.  Style the menu to appear horizontally across the top of the page using **CSS flexbox** ([Flexbox cheat sheet](https://daveeveritt.github.io/flexbox-cheatsheet/))
+3.  Style the menu to appear horizontally across the top of the page using **CSS flexbox** ([Flexbox cheat sheet](http://flexbox.malven.co/))
 4.  create a `:hover` style for the menu items
 5.  use a CSS `transition` to make the menu item background fade to another colour on hover (**clue:** the CSS `transition` rule goes on the “`a`” tag selector rule, **not** the `a:hover` selector rule)
 
@@ -46,5 +46,5 @@ Nice work! You have now completed the **02 Lab learning outcomes**:
 
 These links will help you with the code:
 
-- [Flexbox cheat sheet](https://daveeveritt.github.io/flexbox-cheatsheet/)
+- [Flexbox cheat sheet](http://flexbox.malven.co/)
 - [Targeting HTML and changing CSS with JS](https://ctec3905.github.io/js-get-elements/): this example page ([source code on GitHub](https://github.com/CTEC3905/js-get-elements)) shows how to target various HTML elements and make changes to CSS via JavaScript. It uses `addEventListener()` and various types of `getElement(s)By` functions. It will help you understand **how to use JavaScript** to **interact with the DOM**.
