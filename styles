@@ -3,6 +3,10 @@
       color: #373D49;
       line-height: 1.5rem;
     }
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+    }
     h2 {
       font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 2em;
