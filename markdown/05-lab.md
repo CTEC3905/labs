@@ -52,6 +52,10 @@ In the second `fieldset` add:
 
 Finally, below the form, add a paragraph tag containing the text "50" with an id of "the-value" and a class of "value".
 
+```html
+<p id="the-value" class="value">50</p>
+```
+
 In a "styles.css" file, add:
 
 1. a style block for `.value` that sets its `width` to `50%`, and `text-align` to "center"
@@ -65,11 +69,26 @@ Validate your HTML and check that the fields are usable.
 
 In a "scripts.js" file add the line: `"use-strict";`. This will throw up messages in the console that help prevent mistakes and sloppy code.
 
-Below the line above, store a reference to the form in a `const` named `theForm` (using `document.getElementById ("the-form")` as in other exercises), then add two more `const` references - one to the "date" ID called "theDate" and the other called "getDate" using `document.querySelector` to store a reference to `input[type="date"]` (`document.querySelector` can use CSS syntax).
+Below the line above, store a reference to the form in a `const` named `theForm` (using `document.getElementById ("the-form")` as in other exercises).
 
-Add an **event listener** that listens for a `"change"` event, and calls a function "showDate" that sets a variable "d" to a new date: `let d = new Date(getDate.value);`
+```javascript
+const theForm = document.getElementById("the-form");
+```
 
-Now add the newly-entered date value to the `h1` tag’s `innerText` - hints:
+Then add two more `const` references - one to the "date" ID called "theDate" and the other called "getDate" using `document.querySelector` to store a reference to `input[type="date"]` (`document.querySelector` can use CSS syntax).
+
+Add an **event listener** to the `getDate` element (your input of type "date") that listens for a `"change"` event, and calls a function "showDate".
+
+Write a function `showDate` that sets a variable "d" to a new date and add the date value to the `h1` tag’s `innerText`:
+
+```javascript
+function showDate() {
+  const d = new Date(getDate.value);
+  // update the h1 innerText here
+}
+```
+
+Hints:
 
 1. for a human readable date (e.g. "Wed Nov 07 2018") use `d.toDateString()`.
 2. preserve the `h1` tag `innerText` in a variable before adding the date, and use template literal syntax (inside backticks you can use `${}` variable interpolation) to add the new date after the original text
@@ -78,8 +97,8 @@ Now add the newly-entered date value to the `h1` tag’s `innerText` - hints:
 To pre-populate the `h1` tag with today's date, you could then also call "parseDate" with today’s date as a parameter:
 
 ```javascript
-  let today = new Date();
-  parseDate(today);
+let today = new Date();
+parseDate(today);
 ```
 
 The date in the `h1` heading should change when the user picks a new date. The date should be formatted as the following example: "Wed Nov 07 2018".
