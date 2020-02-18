@@ -16,7 +16,11 @@ Rather than having a generic text input, there are specific input field types, m
 - time
 - url
 
-Here’s an example of the syntax: `<input type="color" value="#ff0000">` - the `value` attribute is optional, but can be used to set a default.
+Here’s an example of the syntax: 
+
+`<input type="color" value="#ff0000">`
+
+The `value` attribute is optional, but can be used to set a default.
 
 These input types will only accept **specific input** so are good for preventing some user errors e.g. an input of type "number" will only accept… you guessed it: numbers! If you try to type in a letter, nothing will show up. A "url" type field needs the full "https://" or "http://" prefix.
 
@@ -28,15 +32,23 @@ If you have errors, don’t forget to use `console.log()` to check your code at 
 
 ### Task 1 - Create an interface
 
-Start with an "index.html" file. Add an `h1` tag containing the text "HTML5 forms:", with an `id="date"`.
+Start with a basic "index.html" template like the sample-code repository. Add an `h1` tag containing the text "HTML5 forms:", with an `id="date"`.
 
-Add a `<form>` element with an `id="the-form"` containing:
+```html
+<h1 id="date">HTML5 forms: </h1>
+```
 
-1. a `<fieldset>` element, containing…
-2. a `<label>` tag with the attribute `for="datePicker"` (instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field), an input of type "date" with an `id="datePicker"`
-3. another `<fieldset>` element (you use these to contain related input fields, and can style them to help make forms more logical and user-friendly)
-4. inside this second `fieldset`, two inputs of type "color" and "range". The "range" syntax is `<input type="range" min="0" max="100">` - the `min` and `max` attributes can be set as required, but use the values shown here. Set the `value` attribute of the `color` input to a default: `value="#eeccff"` and give it an ID of "colour".
+Add a `<form>` element containing two `<fieldset>` elements. You use these to contain related input fields, and can style them to help make forms more logical and user-friendly.
 
+In the first `fieldset` add:
+
+1. a `<label>` tag with the attribute `for="datePicker"` (instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field)
+2. an `<input>` of `type="date"` and `id="datePicker"`
+
+In the second `fieldset` add:
+
+1. an input of type "color" with the `value` attribute set to a colour of your choice (e.g. `value="#eeccff"`) and give it an ID of "colour".
+2. an input of type "range" with attributes `min="0"` and `max="100"`).
 
 Finally, below the form, add a paragraph tag containing the text "50" with an id of "the-value" and a class of "value".
 
