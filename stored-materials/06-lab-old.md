@@ -5,7 +5,7 @@
 This week, you'll be learning about **locaStorage** with JavaScript. Most of the code is supplied and functions as it should, so you can just experiment with it, as explained below.
 
 - Javascript: `console.log()` to check your code
-- HTML: validate your code every few changes
+- HTML: **validate your code** every few changes
 
 ---
 
