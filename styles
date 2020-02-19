@@ -8,16 +8,18 @@
     margin: 0 auto;
     font-size: 1.25em;
   }
-  h2 {
+  h1, h2 {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     line-height: 2.5rem;
   }
   code {
     color: #c7254e;
-    background: #f9f2f4;
     padding: 2px 4px;
     border-radius: 4px;
+  }
+  .sourceCode pre {
+    background: #f9f2f4;
   }
   a:hover {
     color: #7800e9;
