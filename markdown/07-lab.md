@@ -19,7 +19,7 @@ Create a new repository on your own GitHub account and copy its remote URL (from
 
 You can then experiment with the code, make changes, and push your version to your own account.
 
-##Task 2 - experiment with the code and look up API documentation
+## Task 2 - experiment with the code and look up API documentation
 
 Play with the existing code and try to change some of the query parameters.
 

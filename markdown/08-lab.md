@@ -8,8 +8,6 @@ This week’s lab follows on from the lecture material covering animations. The 
 
 ## Task 1 - run the code and inspect it
 
-The master branch ???
-
 Navigate to the folder where you store your CTEC3905 work, then `git clone https://github.com/CTEC3905/08-lab` and `cd 08-lab`.
 
 Create a new repository on your own GitHub account and copy its remote URL (from the green "Clone or Download" button), then back in the command-line, change the remote to your new repo with `git remote set-url origin YOUR_NEW_REPO`, then check it with `git remote -v`.

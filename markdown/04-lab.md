@@ -26,7 +26,7 @@
 - ES6 arrow function syntax
 - adding and removing a class with JavaScript
 
-If you want to see the menu slide in with a CSS `transition`, you'll need to use `absolute` position or `margin`, as `display` cannot be animated by CSS.
+If you want to see the menu slide in with a CSS `transition`, you'll need to use `transform: translate…` (x or y) to shift the position, as `display` cannot be animated by CSS.
 
 If you have content blocker on your iPhone you may need to “reload without content blockers” in mobile Safari.
 
