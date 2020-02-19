@@ -1,4 +1,4 @@
-# Step by step guide to shopping list example
+# Exercise 06-lab: step by step guide—a shopping list
 
 ## Build a list
 
@@ -277,7 +277,6 @@ We position the body in the center of the page, overwrite the default `ul` paddi
 This will put the text on the left and the button on the right.
 
 Add a few more styles if you like.
-
 
 ## Saving the list
 

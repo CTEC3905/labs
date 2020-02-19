@@ -16,7 +16,7 @@
 4. Add some visible content e.g. inside an opening and closing HTML level 1 heading tag (`<h1>`)
 5. Load the page in the Chrome browser
 
----
+## Add content to the page
 
 1. Add some content to the page and **reload it in the browser** each time you make a change (Windows/Mac: ctrl-R/cmd-R)
 2. Check your code in the [HTML validator](https://validator.w3.org/) and correct any errors (repeat by validating each time you add more code)
@@ -24,7 +24,7 @@
 4. Add the following line to your “styles.css” file: `body { background: #f99; }` and reload the HTML page
 5. Try some more styles in your “styles.css” file, reloading the page each time
 
----
+## Add JavaScript
 
 1. Create a “scripts.js” file inside a “js” folder and link to it in your HTML file just before the closing `</body>` tag like this: `<script src="js/scripts.js"></script>`
 2. Add the following to your “scripts.js” file: `alert("Hello!");` and reload the page in the browser
@@ -33,7 +33,7 @@
 5. Close down the browser, text editor and the folder containing your code
 6. Find the folder again open it in the text editor Atom, and also open the HTML page in the browser
 
----
+## Conclusion
 
 You have now completed the basic workflow for writing and running your code in a web browser.
 
