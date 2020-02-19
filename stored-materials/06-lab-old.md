@@ -1,6 +1,6 @@
-## Exercise 06-lab: Local Storage
+# Exercise 06-lab: Local Storage
 
-### Introduction
+##Introduction
 
 This week, you'll be learning about **locaStorage** with JavaScript. Most of the code is supplied and functions as it should, so you can just experiment with it, as explained below.
 
@@ -9,7 +9,7 @@ This week, you'll be learning about **locaStorage** with JavaScript. Most of the
 
 ---
 
-### localStorage
+##localStorage
 
 Last week’s exercise demonstrated how to manipulate the Document Object Model (DOM) after receiving user input. This week, you will learn how to store and retrieve data to/from the browser’s local storage data store, so that is is retained between between browser sessions and can be used on multiple pages.
 

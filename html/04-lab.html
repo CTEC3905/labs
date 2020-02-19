@@ -26,7 +26,7 @@
       margin: 0 auto;
       font-size: 1.25em;
     }
-    h1, h2 {
+    h1, h2, h3 {
       font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 2em;
       line-height: 2.5rem;
@@ -48,7 +48,7 @@
   </style>
 </head>
 <body>
-<h2 id="exercise-1-breakpoints-and-a-mobile-menu">Exercise 1: breakpoints and a mobile menu</h2>
+<h1 id="exercise-1-breakpoints-and-a-mobile-menu">Exercise 1: breakpoints and a mobile menu</h1>
 <ol type="1">
 <li>Create a new repo on GitHub for this lab and copy the URL. Using the command-line in your local CTEC3905 folder, clone the <a href="https://github.com/CTEC3905/starter-code">CTEC3905 starter code</a> on GitHub with <code>git clone https://github.com/CTEC3905/starter-code.git</code>, then <code>cd</code> into the cloned folder. In this lab, you’ll create a basic mobile menu using these files, so change the remote in your local repo to your new repo URL using <code>git remote set-url origin your_new_repo_url.git</code> - obviously, replace ‘your_new_repo_url.git’ with your URL(!) - and check that this is correct with <code>git remote -v</code></li>
 <li>Open the folder in Atom and look at the breakpoints in the CSS file - you’ll see the mobile and global styles at the top, then two media queries beginning <code>@media</code>, the first for screen widths over 500px and the next for screen widths over 1000px. If you try this out in the browser by adjusting the window width, you’ll see the background colour change for each of the three widths</li>
@@ -57,7 +57,7 @@
 <li>Now the (slightly) tricky part (see the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Combinators">adjacent sibling combinator</a>). Add a <code>:hover</code> state in the mobile/global styles for the <code>.menu</code> class using <code>display: flex;</code> to show the <code>nav</code> element when the mouse <strong>hovers over the menu div</strong>. You need the “adjacent sibling combinator” (a plus “<code>+</code>” sign) to target the <code>nav</code> as an <strong>adjacent sibling</strong> of the <code>.menu:hover</code> state. Test the funcionality in the browser, adjusting width between the mobile (pink) view and above (green or blue) - the menu should be vertical (<code>flex-direction: column;</code>) at mobile but horizontal (<code>flex-direction: row</code>) for wider screens. You should be able to hover over the word “menu” to reveal the <code>nav</code> tag with your menu. Finally, you need to add a <code>nav:hover</code> selector to the same rule (using a comma to separate the two selectors) so that the menu stays visible when you hover over it</li>
 </ol>
 <hr />
-<h2 id="exercise-2-using-javascript-to-add-a-class">Exercise 2: using JavaScript to add a class</h2>
+<h1 id="exercise-2-using-javascript-to-add-a-class">Exercise 2: using JavaScript to add a class</h1>
 <ol type="1">
 <li>Instead of using <code>:hover</code>, you’re now going to use JavaScript to show and hide the menu. In the html file, add an ID of <code>menu-toggle</code> to the <code>menu</code> div tag and an ID of <code>menu-nav</code> to the <code>nav</code> tag. Pull in the JavaScript file just before the closing <code>&lt;/body&gt;</code> tag with <code>&lt;script src="js/scripts.js"&gt;&lt;/script&gt;</code>. In the mobile/global CSS, comment out the entire <code>:hover</code> style block so that <code>display: flex</code> is no longer applied. You’re going to move this rule to a new class that will be activated by JavaScript</li>
 <li>Open the empty .js file (or create one in “js/scripts.js”) and add two <code>const</code> variables that store <code>getElementById</code> references to the two new IDs, named like them but in “camelCase”: <code>menuToggle</code> and <code>menuNav</code> (this naming convention is not essential but helps identify things)</li>

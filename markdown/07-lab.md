@@ -1,6 +1,6 @@
-## Exercise 07-lab:  data APIs
+# Exercise 07-lab:  data APIs
 
-### Introduction
+##Introduction
 
 This week’s lab follows on from the lecture material covering external data APIs. The [example repository](https://github.com/CTEC3905/07-lab-json-ajax) shows how to pull data from Wikipedia and has 3 branches with additional API examples.
 
@@ -11,7 +11,7 @@ For a more general introduction to APIs try the Codecademy [mini course](https:/
 
 ---
 
-### Task 1 - run the code and inspect it
+##Task 1 - run the code and inspect it
 
 The master branch shows how to use the public Wikipedia API.
 
@@ -21,7 +21,7 @@ Create a new repository on your own GitHub account and copy its remote URL (from
 
 You can then experiment with the code, make changes, and push your version to your own account.
 
-### Task 2 - experiment with the code and look up API documentation
+##Task 2 - experiment with the code and look up API documentation
 
 Play with the existing code and try to change some of the query parameters.
 
@@ -39,7 +39,7 @@ Comment in the console.log statement on line 41. Then inspect the JavaScript con
 
 ---
 
-### Task 3 - Look at the different branches
+##Task 3 - Look at the different branches
 
 First close Atom, then commit any changes you've made! There's a problem with Atom running in CloudPlayer that prevents GIT from storing the changes properly.
 

@@ -1,8 +1,8 @@
-## Exercise 05-lab: form fields and user input
+# Exercise 05-lab: form fields and user input
 
 This week we're using a different format for these instructions, so the exercise is broken up into tasks.
 
-### Introduction
+## Introduction
 
 Rather than having a generic text input, there are specific input field types, many of which also determine how mobiles handle input. Some of these were introduced with HTML5:
 
@@ -30,7 +30,7 @@ If you have errors, don’t forget to use `console.log()` to check your code at 
 
 ---
 
-### Task 1 - Create an interface
+## Task 1 - Create an interface
 
 Start with a basic "index.html" template like the sample-code repository. Add an `h1` tag containing the text "HTML5 forms:", with an `id="date"`.
 
@@ -65,7 +65,7 @@ Validate your HTML and check that the fields are usable.
 
 ---
 
-### Task 2 - Display the input values on the page
+##Task 2 - Display the input values on the page
 
 In a "scripts.js" file add the line: `"use-strict";`. This will throw up messages in the console that help prevent mistakes and sloppy code.
 
@@ -105,7 +105,7 @@ The date in the `h1` heading should change when the user picks a new date. The d
 
 ---
 
-### Task 3 - Modify an interface element using a "color" input
+##Task 3 - Modify an interface element using a "color" input
 
 Store `const` references by ID to the `color` input field (ID "colour") and to the paragraph (ID "the-value").
 
@@ -119,7 +119,7 @@ The paragraph’s background colour should change when the user picks **a** colo
 
 ---
 
-### Task 4 - Modify an interface element using a "range" input
+##Task 4 - Modify an interface element using a "range" input
 
 Add an event listener to the "range" input element that captures the element’s value when it detects "input", and calls a function "rangeAction", that:
 

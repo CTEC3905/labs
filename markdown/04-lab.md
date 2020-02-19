@@ -1,4 +1,4 @@
-## Exercise 1: breakpoints and a mobile menu
+# Exercise 1: breakpoints and a mobile menu
 
 1. Create a new repo on GitHub for this lab and copy the URL. Using the command-line in your local CTEC3905 folder, clone the [CTEC3905 starter code](https://github.com/CTEC3905/starter-code) on GitHub with `git clone https://github.com/CTEC3905/starter-code.git`, then `cd` into the cloned folder. In this lab, you’ll create a basic mobile menu using these files, so change the remote in your local repo to your new repo URL using `git remote set-url origin your_new_repo_url.git` - obviously, replace ‘your_new_repo_url.git’ with your URL(!) - and check that this is correct with `git remote -v`
 2. Open the folder in Atom and look at the breakpoints in the CSS file - you’ll see the mobile and global styles at the top, then two media queries beginning `@media`, the first for screen widths over 500px and the next for screen widths over 1000px. If you try this out in the browser by adjusting the window width, you'll see the background colour change for each of the three widths
@@ -8,7 +8,7 @@
 
 ---
 
-## Exercise 2: using JavaScript to add a class
+# Exercise 2: using JavaScript to add a class
 
 1. Instead of using `:hover`, you’re now going to use JavaScript to show and hide the menu. In the html file, add an ID of `menu-toggle` to the `menu` div tag and an ID of `menu-nav` to the `nav` tag. Pull in the JavaScript file just before the closing `</body>` tag with `<script src="js/scripts.js"></script>`. In the mobile/global CSS, comment out the entire `:hover` style block so that `display: flex` is no longer applied. You’re going to move this rule to a new class that will be activated by JavaScript
 2. Open the empty .js file (or create one in “js/scripts.js”) and add two `const` variables that store `getElementById` references to the two new IDs, named like them but in “camelCase”: `menuToggle` and `menuNav` (this naming convention is not essential but helps identify things)

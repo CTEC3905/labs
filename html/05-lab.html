@@ -88,7 +88,7 @@
       margin: 0 auto;
       font-size: 1.25em;
     }
-    h1, h2 {
+    h1, h2, h3 {
       font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 2em;
       line-height: 2.5rem;
@@ -110,9 +110,9 @@
   </style>
 </head>
 <body>
-<h2 id="exercise-05-lab-form-fields-and-user-input">Exercise 05-lab: form fields and user input</h2>
+<h1 id="exercise-05-lab-form-fields-and-user-input">Exercise 05-lab: form fields and user input</h1>
 <p>This week we’re using a different format for these instructions, so the exercise is broken up into tasks.</p>
-<h3 id="introduction">Introduction</h3>
+<h2 id="introduction">Introduction</h2>
 <p>Rather than having a generic text input, there are specific input field types, many of which also determine how mobiles handle input. Some of these were introduced with HTML5:</p>
 <ul>
 <li>color</li>
@@ -132,7 +132,7 @@
 <p>These fields also have built-in warnings that show up in the browser, which you can customise using JavaScript.</p>
 <p>If you have errors, don’t forget to use <code>console.log()</code> to check your code at various points.</p>
 <hr />
-<h3 id="task-1---create-an-interface">Task 1 - Create an interface</h3>
+<h2 id="task-1---create-an-interface">Task 1 - Create an interface</h2>
 <p>Start with a basic “index.html” template like the sample-code repository. Add an <code>h1</code> tag containing the text “HTML5 forms:”, with an <code>id="date"</code>.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;h1</span><span class="ot"> id=</span><span class="st">&quot;date&quot;</span><span class="kw">&gt;</span>HTML5 forms: <span class="kw">&lt;/h1&gt;</span></span></code></pre></div>
 <p>Add a <code>&lt;form&gt;</code> element containing two <code>&lt;fieldset&gt;</code> elements. You use these to contain related input fields, and can style them to help make forms more logical and user-friendly.</p>
@@ -155,7 +155,7 @@
 </ol>
 <p>Validate your HTML and check that the fields are usable.</p>
 <hr />
-<h3 id="task-2---display-the-input-values-on-the-page">Task 2 - Display the input values on the page</h3>
+<p>##Task 2 - Display the input values on the page</p>
 <p>In a “scripts.js” file add the line: <code>"use-strict";</code>. This will throw up messages in the console that help prevent mistakes and sloppy code.</p>
 <p>Below the line above, store a reference to the form in a <code>const</code> named <code>theForm</code> (using <code>document.getElementById ("the-form")</code> as in other exercises).</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">const</span> theForm <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&quot;the-form&quot;</span>)<span class="op">;</span></span></code></pre></div>
@@ -177,14 +177,14 @@
 <span id="cb5-2"><a href="#cb5-2"></a><span class="at">parseDate</span>(today)<span class="op">;</span></span></code></pre></div>
 <p>The date in the <code>h1</code> heading should change when the user picks a new date. The date should be formatted as the following example: “Wed Nov 07 2018”.</p>
 <hr />
-<h3 id="task-3---modify-an-interface-element-using-a-color-input">Task 3 - Modify an interface element using a “color” input</h3>
+<p>##Task 3 - Modify an interface element using a “color” input</p>
 <p>Store <code>const</code> references by ID to the <code>color</code> input field (ID “colour”) and to the paragraph (ID “the-value”).</p>
 <p>Create a function <code>setColor</code> that simply sets the paragraph <code>.style</code> property to the <code>.value</code> property of the <code>color</code> input.</p>
 <p>Add an event listener to the form element that detects “input”, and calls “setColor”.</p>
 <p>You can then also call <code>setColor();</code> separately to set the paragraph background to the <code>color</code> field default.</p>
 <p>The paragraph’s background colour should change when the user picks <strong>a</strong> colour from the browser’s colour dialogue.</p>
 <hr />
-<h3 id="task-4---modify-an-interface-element-using-a-range-input">Task 4 - Modify an interface element using a “range” input</h3>
+<p>##Task 4 - Modify an interface element using a “range” input</p>
 <p>Add an event listener to the “range” input element that captures the element’s value when it detects “input”, and calls a function “rangeAction”, that:</p>
 <ol type="1">
 <li>shows the value on the page immediately in the “innerText” of the paragraph tag</li>

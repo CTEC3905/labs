@@ -1,4 +1,4 @@
-## Exercise 1: solution to last week's lab exercise
+# Exercise 1: solution to last week's lab exercise
 
 1. Navigate to your CTEC3905 labs folder and open a command prompt (CMD in Windows or terminal on OSX) in that folder, or you can shift-right-click and select Open Powershell or Command prompt. NOTE: if you have a "02-lab" folder there, rename it to "02-lab-my-code" or something else, because the lab code folder you're about to clone is also called "02-lab"
 2. Type in `git clone https://github.com/CTEC3905/02-lab.git` (NOTE: you may need to log in with your GitHub credentials at this stage, more than once, so just keep signing in!) - you can ignore the separate first-time git setup request asking for your email etc. - it's not needed)
@@ -8,7 +8,7 @@
 
 ---
 
-## Exercise 2: introduction to GIT
+# Exercise 2: introduction to GIT
 
 1. Open a command prompt in the folder containing the code that you wrote last week and type `git status` which should tell you that it’s not a GIT repository
 2. Type `git init` to turn your code into a repository, then `git status` which will show your files not yet added in **red**
@@ -18,7 +18,7 @@
 
 ---
 
-## Exercise 3: introduction to GitHub
+# Exercise 3: introduction to GitHub
 
 1. Sign in to your GitHub account and create a new repository - do not add a readme file or change any of the default options
 2. The next GitHub screen will show the **URL for your new repository** which we’re going to use to add your files from lab 02. Make a note of this URL or copy it

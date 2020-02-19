@@ -6,7 +6,7 @@ If not, don't worry - use your **Self-directed Learning Time (SDL)** to work on 
 
 ---
 
-## Exercise 1: getting familiar with HTML5 and CSS
+# Exercise 1: getting familiar with HTML5 and CSS
 
 1.  Create a basic HTML file `index.html`, a CSS file `styles.css` and a “js” folder containing a JavaScript file `scripts.js`
 2.  Mark up a simple 5-item menu with “`a`” tag links (`<a href="#">link text</a>` tags) inside a `nav` tag. Keep it simple and don’t use any other tags to do this
@@ -24,7 +24,7 @@ If not, don't worry - use your **Self-directed Learning Time (SDL)** to work on 
 
 ---
 
-## Exercise 2: simple JavaScript interaction
+# Exercise 2: simple JavaScript interaction
 
 1.  Add an `id` attribute of `"hello"` to the “`p`” tag
 2.  use `document.getElementById();` to set a JavaScript `const` property named `hello` to store a reference to the paragraph

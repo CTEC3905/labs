@@ -1,4 +1,4 @@
-## Exercise 1: introduction to using the browser
+# Exercise 1: introduction to using the browser
 
 1. Open the Chrome Browser (**NOT** Internet Explorer!)
 2. Open this website to analyse: [developer.github.com](https://developer.github.com/)
@@ -8,7 +8,7 @@
 
 ---
 
-## Exercise 2: introduction to workflow
+# Exercise 2: introduction to workflow
 
 1. Create a folder for this exercise in a place of your choice, making sure you can locate it again
 2. Open the empty folder in a programmer's text editor - if Atom isn't installed, go to [software.dmu.ac.uk](http://software.dmu.ac.uk/) and select it for download, using the arrow on the right, then double-click to load it
