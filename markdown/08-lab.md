@@ -14,11 +14,11 @@ Create a new repository on your own GitHub account and copy its remote URL (from
 
 You can then experiment with the code, make changes, and push your version to your own account.
 
-##Task 2 - create your own animation
+## Task 2 - create your own animation
 
 Create a simple animation of your own, using the advised properties (see the readme) and run it. You can make slideshows and other features using just CSS animations—next week some further examples will be made available.
 
-##Task 3 - Checkout the other branch
+## Task 3 - Checkout the other branch
 
 **NOTE:** you may need to **quit Atom** before checking out a branch!
 
