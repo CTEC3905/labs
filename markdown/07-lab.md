@@ -1,4 +1,4 @@
-## Exercise 07-lab: 
+## Exercise 07-lab:  data APIs
 
 ### Introduction
 
