@@ -16,9 +16,8 @@ NOTE: (link to list of APIs)
 
 <!--
 - [Lab 08: CSS animation and transition](https://ctec3905.github.io/labs/html/08-lab.html)
-- Lab 09: TBC
-- Lab 10: TBC
-- [Lab 06 OLD storing user input with localStorage](https://ctec3905.github.io/labs/html/06-lab.html) 
+- Lab 09: TBC PWAs??
+- Lab 10: TBC CSS grid?
 -->
 
 The html versions are generated locally before commits via git hooks using Pandoc. These can then be linked directly to Blackboard.
