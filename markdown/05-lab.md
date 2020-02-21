@@ -40,8 +40,10 @@ Add a `<form>` element containing two `<fieldset>` elements. You use these to co
 
 In the first `fieldset` add:
 
-1. a `<label>` tag with the attribute `for="datePicker"` (instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field)
-2. an `<input>` of `type="date"` and `id="datePicker"`
+1. a `<label>` element with the attribute `for="datePicker"` with the text "Date:" between the tags
+2. an `<input>` element of `type="date"` and `id="datePicker"`
+
+Instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field.
 
 In the second `fieldset` add:
 
