@@ -99,7 +99,7 @@ The date in the `h1` heading should change when the user picks a new date. The d
 
 Store `const` references by ID to the `color` input field (ID "colour") and to the paragraph (ID "the-value").
 
-Create a function `setColor` that simply sets the paragraph `.style` property  to the `.value` property of the `color` input.
+Create a function `setColor` that simply sets the paragraph `.style.backgroundColor` property  to the `.value` property of the `color` input.
 
 Add an event listener to the form element that detects "input", and calls "setColor".
 
