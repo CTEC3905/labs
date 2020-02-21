@@ -124,7 +124,6 @@ If you managed to make these exercises work, experiment with handling and displa
 
 - see how HTML5 form fields work by default
 - use form fields to collect user input
-- use `document.querySelector`
 - handle user input with JavaScript
 - reflect user input directly on the page without reloading
 
