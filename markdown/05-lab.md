@@ -48,7 +48,7 @@ Instead of just adding text next to the form field, a `label` tag makes a form f
 In the second `fieldset` add:
 
 1. an input of type "color" with the `value` attribute set to a colour of your choice (e.g. `value="#eeccff"`) and give it an ID of "colour".
-2. an input of type "range" with attributes `min="0"` and `max="100"`).
+2. an input of type "range" with attributes `min="0"`, `max="100"` and `id="range"`.
 
 Finally, below the form, add a paragraph tag containing the text "50" with an id of "the-value" and a class of "value".
 
