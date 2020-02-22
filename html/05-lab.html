@@ -143,13 +143,14 @@
 <p>Add a <code>&lt;form&gt;</code> element containing two <code>&lt;fieldset&gt;</code> elements. You use these to contain related input fields, and can style them to help make forms more logical and user-friendly.</p>
 <p>In the first <code>fieldset</code> add:</p>
 <ol type="1">
-<li>a <code>&lt;label&gt;</code> tag with the attribute <code>for="datePicker"</code> (instead of just adding text next to the form field, a <code>label</code> tag makes a form field accessible by relating the field’s description directly to the field)</li>
-<li>an <code>&lt;input&gt;</code> of <code>type="date"</code> and <code>id="datePicker"</code></li>
+<li>a <code>&lt;label&gt;</code> element with the attribute <code>for="datePicker"</code> with the text “Date:” between the tags</li>
+<li>an <code>&lt;input&gt;</code> element of <code>type="date"</code> and <code>id="datePicker"</code></li>
 </ol>
+<p>Instead of just adding text next to the form field, a <code>label</code> tag makes a form field accessible by relating the field’s description directly to the field.</p>
 <p>In the second <code>fieldset</code> add:</p>
 <ol type="1">
 <li>an input of type “color” with the <code>value</code> attribute set to a colour of your choice (e.g. <code>value="#eeccff"</code>) and give it an ID of “colour”.</li>
-<li>an input of type “range” with attributes <code>min="0"</code> and <code>max="100"</code>).</li>
+<li>an input of type “range” with attributes <code>min="0"</code>, <code>max="100"</code> and <code>id="range"</code>.</li>
 </ol>
 <p>Finally, below the form, add a paragraph tag containing the text “50” with an id of “the-value” and a class of “value”.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;the-value&quot;</span><span class="ot"> class=</span><span class="st">&quot;value&quot;</span><span class="kw">&gt;</span>50<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
@@ -161,28 +162,26 @@
 <p>Validate your HTML and check that the fields are usable.</p>
 <h2 id="task-2---display-the-input-values-on-the-page">Task 2 - Display the input values on the page</h2>
 <p>In a “scripts.js” file add the line: <code>"use-strict";</code>. This will throw up messages in the console that help prevent mistakes and sloppy code.</p>
-<p>Below the line above, store a reference to the form in a <code>const</code> named <code>theForm</code> (using <code>document.getElementById ("the-form")</code> as in other exercises).</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">const</span> theForm <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&quot;the-form&quot;</span>)<span class="op">;</span></span></code></pre></div>
-<p>Then add two more <code>const</code> references - one to the “date” ID called “theDate” and the other called “getDate” using <code>document.querySelector</code> to store a reference to <code>input[type="date"]</code> (<code>document.querySelector</code> can use CSS syntax).</p>
-<p>Add an <strong>event listener</strong> to the <code>getDate</code> element (your input of type “date”) that listens for a <code>"change"</code> event, and calls a function “showDate”.</p>
-<p>Write a function <code>showDate</code> that sets a variable “d” to a new date and add the date value to the <code>h1</code> tag’s <code>innerText</code>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">function</span> <span class="at">showDate</span>() <span class="op">{</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="kw">const</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>(<span class="va">getDate</span>.<span class="at">value</span>)<span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="co">// update the h1 innerText here</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="op">}</span></span></code></pre></div>
+<p>Below the line above add two <code>const</code> references - one to the main heading (with <code>id="date"</code>) and the other to the date input (with <code>id="datePicker"</code>).</p>
+<p>Add an <strong>event listener</strong> to the input of type “date” that listens for a <code>"change"</code> event, and calls a function “setDate”.</p>
+<p>Write a function <code>setDate</code> that updates the <code>h1</code> tag’s <code>innerText</code> with the selected date:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">function</span> <span class="at">setDate</span>() <span class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="kw">const</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>(<span class="va">getDate</span>.<span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="co">// update the h1 innerText here</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="op">}</span></span></code></pre></div>
 <p>Hints:</p>
 <ol type="1">
-<li>for a human readable date (e.g. “Wed Nov 07 2018”) use <code>d.toDateString()</code>.</li>
+<li>for a human readable date (e.g. “Wed Nov 07 2018”), load the date string into a Date object (as above) and use <code>d.toDateString()</code>.</li>
 <li>preserve the <code>h1</code> tag <code>innerText</code> in a variable before adding the date, and use template literal syntax (inside backticks you can use <code>${}</code> variable interpolation) to add the new date after the original text</li>
-<li>“showDate” could call another function “parseDate” that takes a date as a parameter and adds it to the <code>h1</code> tag <code>innerText</code> (preserved in the previous step)</li>
+<li>“setDate” could call another function “showDate” that takes a date as a parameter and adds it to the <code>h1</code> tag <code>innerText</code> (preserved in the previous step)</li>
 </ol>
-<p>To pre-populate the <code>h1</code> tag with today’s date, you could then also call “parseDate” with today’s date as a parameter:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">let</span> today <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>()<span class="op">;</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="at">parseDate</span>(today)<span class="op">;</span></span></code></pre></div>
+<p>To pre-populate the <code>h1</code> tag with today’s date, you could then also call “showDate” with today’s date as a parameter:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">let</span> today <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>()<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="at">showDate</span>(today)<span class="op">;</span></span></code></pre></div>
 <p>The date in the <code>h1</code> heading should change when the user picks a new date. The date should be formatted as the following example: “Wed Nov 07 2018”.</p>
 <h2 id="task-3---modify-an-interface-element-using-a-color-input">Task 3 - Modify an interface element using a “color” input</h2>
 <p>Store <code>const</code> references by ID to the <code>color</code> input field (ID “colour”) and to the paragraph (ID “the-value”).</p>
-<p>Create a function <code>setColor</code> that simply sets the paragraph <code>.style</code> property to the <code>.value</code> property of the <code>color</code> input.</p>
+<p>Create a function <code>setColor</code> that simply sets the paragraph <code>.style.backgroundColor</code> property to the <code>.value</code> property of the <code>color</code> input.</p>
 <p>Add an event listener to the form element that detects “input”, and calls “setColor”.</p>
 <p>You can then also call <code>setColor();</code> separately to set the paragraph background to the <code>color</code> field default.</p>
 <p>The paragraph’s background colour should change when the user picks <strong>a</strong> colour from the browser’s colour dialogue.</p>
@@ -199,7 +198,6 @@
 <ul>
 <li>see how HTML5 form fields work by default</li>
 <li>use form fields to collect user input</li>
-<li>use <code>document.querySelector</code></li>
 <li>handle user input with JavaScript</li>
 <li>reflect user input directly on the page without reloading</li>
 </ul>

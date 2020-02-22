@@ -40,13 +40,15 @@ Add a `<form>` element containing two `<fieldset>` elements. You use these to co
 
 In the first `fieldset` add:
 
-1. a `<label>` tag with the attribute `for="datePicker"` (instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field)
-2. an `<input>` of `type="date"` and `id="datePicker"`
+1. a `<label>` element with the attribute `for="datePicker"` with the text "Date:" between the tags
+2. an `<input>` element of `type="date"` and `id="datePicker"`
+
+Instead of just adding text next to the form field, a `label` tag makes a form field accessible by relating the field's description directly to the field.
 
 In the second `fieldset` add:
 
 1. an input of type "color" with the `value` attribute set to a colour of your choice (e.g. `value="#eeccff"`) and give it an ID of "colour".
-2. an input of type "range" with attributes `min="0"` and `max="100"`).
+2. an input of type "range" with attributes `min="0"`, `max="100"` and `id="range"`.
 
 Finally, below the form, add a paragraph tag containing the text "50" with an id of "the-value" and a class of "value".
 
@@ -65,20 +67,14 @@ Validate your HTML and check that the fields are usable.
 
 In a "scripts.js" file add the line: `"use-strict";`. This will throw up messages in the console that help prevent mistakes and sloppy code.
 
-Below the line above, store a reference to the form in a `const` named `theForm` (using `document.getElementById ("the-form")` as in other exercises).
+Below the line above add two `const` references - one to the main heading (with `id="date"`) and the other to the date input (with `id="datePicker"`).
+
+Add an **event listener** to the input of type "date" that listens for a `"change"` event, and calls a function "setDate".
+
+Write a function `setDate` that updates the `h1` tag’s `innerText` with the selected date:
 
 ```javascript
-const theForm = document.getElementById("the-form");
-```
-
-Then add two more `const` references - one to the "date" ID called "theDate" and the other called "getDate" using `document.querySelector` to store a reference to `input[type="date"]` (`document.querySelector` can use CSS syntax).
-
-Add an **event listener** to the `getDate` element (your input of type "date") that listens for a `"change"` event, and calls a function "showDate".
-
-Write a function `showDate` that sets a variable "d" to a new date and add the date value to the `h1` tag’s `innerText`:
-
-```javascript
-function showDate() {
+function setDate() {
   const d = new Date(getDate.value);
   // update the h1 innerText here
 }
@@ -86,15 +82,15 @@ function showDate() {
 
 Hints:
 
-1. for a human readable date (e.g. "Wed Nov 07 2018") use `d.toDateString()`.
+1. for a human readable date (e.g. "Wed Nov 07 2018"), load the date string into a Date object (as above) and use `d.toDateString()`.
 2. preserve the `h1` tag `innerText` in a variable before adding the date, and use template literal syntax (inside backticks you can use `${}` variable interpolation) to add the new date after the original text
-3. "showDate" could call another function "parseDate" that takes a date as a parameter and adds it to the `h1` tag `innerText`  (preserved in the previous step)
+3. "setDate" could call another function "showDate" that takes a date as a parameter and adds it to the `h1` tag `innerText`  (preserved in the previous step)
 
-To pre-populate the `h1` tag with today's date, you could then also call "parseDate" with today’s date as a parameter:
+To pre-populate the `h1` tag with today's date, you could then also call "showDate" with today’s date as a parameter:
 
 ```javascript
 let today = new Date();
-parseDate(today);
+showDate(today);
 ```
 
 The date in the `h1` heading should change when the user picks a new date. The date should be formatted as the following example: "Wed Nov 07 2018".
@@ -103,7 +99,7 @@ The date in the `h1` heading should change when the user picks a new date. The d
 
 Store `const` references by ID to the `color` input field (ID "colour") and to the paragraph (ID "the-value").
 
-Create a function `setColor` that simply sets the paragraph `.style` property  to the `.value` property of the `color` input.
+Create a function `setColor` that simply sets the paragraph `.style.backgroundColor` property  to the `.value` property of the `color` input.
 
 Add an event listener to the form element that detects "input", and calls "setColor".
 
@@ -128,7 +124,6 @@ If you managed to make these exercises work, experiment with handling and displa
 
 - see how HTML5 form fields work by default
 - use form fields to collect user input
-- use `document.querySelector`
 - handle user input with JavaScript
 - reflect user input directly on the page without reloading
 
