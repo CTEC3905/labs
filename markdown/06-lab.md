@@ -1,5 +1,7 @@
 # Exercise 06-lab: step by step guide—a shopping list
 
+Last week’s exercise demonstrated how to manipulate the Document Object Model (DOM) after receiving user input. This week, you will learn how to store and retrieve data to/from the browser’s local storage data store, to be retained between between browser sessions and used on multiple pages. Think of it as an insecure but 'free' and server-less data store (Chrome has a 5MB limit, whereas cookies can store far less than even 1MB).
+
 ## Build a list
 
 First we will get a very basic list working so we can add items to our list using javascript code.
