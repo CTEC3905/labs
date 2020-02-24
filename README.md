@@ -12,10 +12,10 @@ Repository for lab instructions in markdown format.
 <!--
 - [Lab 07: getting and showing 3rd-party data from JSON APIs](https://ctec3905.github.io/labs/html/07-lab.html) 
 NOTE: (link to list of APIs)
+- [Lab 08: CSS animation and transition](https://ctec3905.github.io/labs/html/08-lab.html)
 -->
 
 <!--
-- [Lab 08: CSS animation and transition](https://ctec3905.github.io/labs/html/08-lab.html)
 - Lab 09: TBC PWAs??
 - Lab 10: TBC CSS grid?
 -->
@@ -26,4 +26,5 @@ The html versions are generated locally before commits via git hooks using Pando
 
 ## TO DO
 
-- nothing pending
+- [ ] add list of APIs to lab 07 (and in lecure)
+- [ ] decide whether to add optional exercises for labs 09 and 10
