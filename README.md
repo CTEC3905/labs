@@ -26,5 +26,4 @@ The html versions are generated locally before commits via git hooks using Pando
 
 ## TO DO
 
-- [ ] change `document.querySelector` in 05-lab (line 78)
-- [ ] replace 06-lab local storage with Graeme's exercise
+- nothing pending

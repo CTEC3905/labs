@@ -97,24 +97,24 @@ The date in the `h1` heading should change when the user picks a new date. The d
 
 ## Task 3 - Modify an interface element using a "color" input
 
-Store `const` references by ID to the `color` input field (ID "colour") and to the paragraph (ID "the-value").
+Store `const` references by ID to the `color` input field (`id="colour"` - note the spelling) and to the paragraph (`id="the-value"`).
 
-Create a function `setColor` that simply sets the paragraph `.style.backgroundColor` property  to the `.value` property of the `color` input.
+Create a function `setColor` that simply sets the paragraph's `.style.backgroundColor` property to the `.value` of the `color` input.
 
-Add an event listener to the form element that detects "input", and calls "setColor".
+Add an event listener to the form element that detects `"input"`, and calls `setColor` (no brackets).
 
-You can then also call `setColor();` separately to set the paragraph background to the `color` field default.
+You can then also call `setColor();` separately (with brackets) to set the paragraph background to the `color` field default.
 
-The paragraph’s background colour should change when the user picks **a** colour from the browser’s colour dialogue.
+The paragraph’s background colour should change when the user picks a colour from the browser’s colour dialogue panel.
 
 ## Task 4 - Modify an interface element using a "range" input
 
-Add an event listener to the "range" input element that captures the element’s value when it detects "input", and calls a function "rangeAction", that:
+Add an event listener to the "range" input element that captures the element’s value when it detects "input", and calls a function `rangeAction`, that:
 
 1. shows the value on the page immediately in the "innerText" of the paragraph tag
 2. applies this value to its width, using `.style.width`.
 
-The paragraph width should change as the user moves the range slider.
+The paragraph width should now change as the user moves the range slider.
 
 ---
 
@@ -127,6 +127,6 @@ If you managed to make these exercises work, experiment with handling and displa
 - handle user input with JavaScript
 - reflect user input directly on the page without reloading
 
-Input fields are the primary method for getting user input, so it is essential to choose the correct type, depending on what you want the user to enter. Handling these on the page with JavaScript and providing feedback without (or before) calling any server scripts or reloading the page is one of the elements of modern web development.
+Input fields are the primary method for getting user data, so it is essential to choose the correct type, depending on what you want the user to enter. Handling these on the page with JavaScript and providing feedback without (or before) calling any server scripts or reloading the page is one of the *key elements of modern web development*.
 
-Manipulating the Document Object Model (DOM) in this way is one approach to avoiding excessive to-and-fro messages between the client (browser) and the web server, which makes user interaction more immediate and intuitive. If you use local storage (in a future lab) to retain user preferences between browser sessions, their choices can be made to persist in that user’s browser.
+Manipulating the Document Object Model (DOM) in this way avoids excessive to-and-fro messages between the client (browser) and the web server, making user interaction more immediate and intuitive. If you use local storage (in a future lab) to retain user preferences between browser sessions, their choices can be made to persist in that user’s browser.

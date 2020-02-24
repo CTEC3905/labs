@@ -180,18 +180,18 @@
 <span id="cb4-2"><a href="#cb4-2"></a><span class="at">showDate</span>(today)<span class="op">;</span></span></code></pre></div>
 <p>The date in the <code>h1</code> heading should change when the user picks a new date. The date should be formatted as the following example: “Wed Nov 07 2018”.</p>
 <h2 id="task-3---modify-an-interface-element-using-a-color-input">Task 3 - Modify an interface element using a “color” input</h2>
-<p>Store <code>const</code> references by ID to the <code>color</code> input field (ID “colour”) and to the paragraph (ID “the-value”).</p>
-<p>Create a function <code>setColor</code> that simply sets the paragraph <code>.style.backgroundColor</code> property to the <code>.value</code> property of the <code>color</code> input.</p>
-<p>Add an event listener to the form element that detects “input”, and calls “setColor”.</p>
-<p>You can then also call <code>setColor();</code> separately to set the paragraph background to the <code>color</code> field default.</p>
-<p>The paragraph’s background colour should change when the user picks <strong>a</strong> colour from the browser’s colour dialogue.</p>
+<p>Store <code>const</code> references by ID to the <code>color</code> input field (<code>id="colour"</code> - note the spelling) and to the paragraph (<code>id="the-value"</code>).</p>
+<p>Create a function <code>setColor</code> that simply sets the paragraph’s <code>.style.backgroundColor</code> property to the <code>.value</code> of the <code>color</code> input.</p>
+<p>Add an event listener to the form element that detects <code>"input"</code>, and calls <code>setColor</code> (no brackets).</p>
+<p>You can then also call <code>setColor();</code> separately (with brackets) to set the paragraph background to the <code>color</code> field default.</p>
+<p>The paragraph’s background colour should change when the user picks a colour from the browser’s colour dialogue panel.</p>
 <h2 id="task-4---modify-an-interface-element-using-a-range-input">Task 4 - Modify an interface element using a “range” input</h2>
-<p>Add an event listener to the “range” input element that captures the element’s value when it detects “input”, and calls a function “rangeAction”, that:</p>
+<p>Add an event listener to the “range” input element that captures the element’s value when it detects “input”, and calls a function <code>rangeAction</code>, that:</p>
 <ol type="1">
 <li>shows the value on the page immediately in the “innerText” of the paragraph tag</li>
 <li>applies this value to its width, using <code>.style.width</code>.</li>
 </ol>
-<p>The paragraph width should change as the user moves the range slider.</p>
+<p>The paragraph width should now change as the user moves the range slider.</p>
 <hr />
 <p>If you managed to make these exercises work, experiment with handling and displaying input from other field types, or spend some time styling the inputs and page elements to make them more appealing.</p>
 <h2 id="lab-learning-outcomes">05 Lab learning outcomes</h2>
@@ -201,7 +201,7 @@
 <li>handle user input with JavaScript</li>
 <li>reflect user input directly on the page without reloading</li>
 </ul>
-<p>Input fields are the primary method for getting user input, so it is essential to choose the correct type, depending on what you want the user to enter. Handling these on the page with JavaScript and providing feedback without (or before) calling any server scripts or reloading the page is one of the elements of modern web development.</p>
-<p>Manipulating the Document Object Model (DOM) in this way is one approach to avoiding excessive to-and-fro messages between the client (browser) and the web server, which makes user interaction more immediate and intuitive. If you use local storage (in a future lab) to retain user preferences between browser sessions, their choices can be made to persist in that user’s browser.</p>
+<p>Input fields are the primary method for getting user data, so it is essential to choose the correct type, depending on what you want the user to enter. Handling these on the page with JavaScript and providing feedback without (or before) calling any server scripts or reloading the page is one of the <em>key elements of modern web development</em>.</p>
+<p>Manipulating the Document Object Model (DOM) in this way avoids excessive to-and-fro messages between the client (browser) and the web server, making user interaction more immediate and intuitive. If you use local storage (in a future lab) to retain user preferences between browser sessions, their choices can be made to persist in that user’s browser.</p>
 </body>
 </html>
