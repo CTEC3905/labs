@@ -8,11 +8,11 @@ Repository for lab instructions in markdown format.
 - [Lab 04: CSS Breakpoints, mobile menu, JavaScript add class](https://ctec3905.github.io/labs/html/04-lab.html)
 - [Lab 05: HTML form fields, JavaScript and user input](https://ctec3905.github.io/labs/html/05-lab.html)
 - [Lab 06: JS, shopping list, localStorage](https://ctec3905.github.io/labs/html/06-lab.html)
+- [Lab 07: External data from JSON APIs](https://ctec3905.github.io/labs/html/07-lab.html) 
+- [Lab 08: CSS animation and transition](https://ctec3905.github.io/labs/html/08-lab.html)
 
 <!--
-- [Lab 07: getting and showing 3rd-party data from JSON APIs](https://ctec3905.github.io/labs/html/07-lab.html) 
 NOTE: (link to list of APIs)
-- [Lab 08: CSS animation and transition](https://ctec3905.github.io/labs/html/08-lab.html)
 -->
 
 <!--
@@ -26,5 +26,5 @@ The html versions are generated locally before commits via git hooks using Pando
 
 ## TO DO
 
-- [ ] add list of APIs to lab 07 (and in lecure)
+- [x] add list of APIs to lab 07 (and in lecure)
 - [ ] decide whether to add optional exercises for labs 09 and 10
