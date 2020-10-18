@@ -74,6 +74,7 @@
     code span.va { color: #19177c; } /* Variable */
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -139,7 +140,7 @@
 <p>If you have errors, don’t forget to use <code>console.log()</code> to check your code at various points.</p>
 <h2 id="task-1---create-an-interface">Task 1 - Create an interface</h2>
 <p>Start with a basic “index.html” template like the sample-code repository. Add an <code>h1</code> tag containing the text “HTML5 forms:”, with an <code>id="date"</code>.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;h1</span><span class="ot"> id=</span><span class="st">&quot;date&quot;</span><span class="kw">&gt;</span>HTML5 forms: <span class="kw">&lt;/h1&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">&lt;h1</span><span class="ot"> id=</span><span class="st">&quot;date&quot;</span><span class="kw">&gt;</span>HTML5 forms: <span class="kw">&lt;/h1&gt;</span></span></code></pre></div>
 <p>Add a <code>&lt;form&gt;</code> element containing two <code>&lt;fieldset&gt;</code> elements. You use these to contain related input fields, and can style them to help make forms more logical and user-friendly.</p>
 <p>In the first <code>fieldset</code> add:</p>
 <ol type="1">
@@ -153,7 +154,7 @@
 <li>an input of type “range” with attributes <code>min="0"</code>, <code>max="100"</code> and <code>id="range"</code>.</li>
 </ol>
 <p>Finally, below the form, add a paragraph tag containing the text “50” with an id of “the-value” and a class of “value”.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;the-value&quot;</span><span class="ot"> class=</span><span class="st">&quot;value&quot;</span><span class="kw">&gt;</span>50<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;the-value&quot;</span><span class="ot"> class=</span><span class="st">&quot;value&quot;</span><span class="kw">&gt;</span>50<span class="kw">&lt;/p&gt;</span></span></code></pre></div>
 <p>In a “styles.css” file, add:</p>
 <ol type="1">
 <li>a style block for <code>.value</code> that sets its <code>width</code> to <code>50%</code>, and <code>text-align</code> to “center”</li>
@@ -165,10 +166,10 @@
 <p>Below the line above add two <code>const</code> references - one to the main heading (with <code>id="date"</code>) and the other to the date input (with <code>id="datePicker"</code>).</p>
 <p>Add an <strong>event listener</strong> to the input of type “date” that listens for a <code>"change"</code> event, and calls a function “setDate”.</p>
 <p>Write a function <code>setDate</code> that updates the <code>h1</code> tag’s <code>innerText</code> with the selected date:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">function</span> <span class="at">setDate</span>() <span class="op">{</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="kw">const</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>(<span class="va">getDate</span>.<span class="at">value</span>)<span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3"></a>  <span class="co">// update the h1 innerText here</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="op">}</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="kw">function</span> <span class="fu">setDate</span>() {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>  <span class="kw">const</span> d <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(getDate<span class="op">.</span><span class="at">value</span>)<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a>  <span class="co">// update the h1 innerText here</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a>}</span></code></pre></div>
 <p>Hints:</p>
 <ol type="1">
 <li>for a human readable date (e.g. “Wed Nov 07 2018”), load the date string into a Date object (as above) and use <code>d.toDateString()</code>.</li>
@@ -176,8 +177,8 @@
 <li>“setDate” could call another function “showDate” that takes a date as a parameter and adds it to the <code>h1</code> tag <code>innerText</code> (preserved in the previous step)</li>
 </ol>
 <p>To pre-populate the <code>h1</code> tag with today’s date, you could then also call “showDate” with today’s date as a parameter:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">let</span> today <span class="op">=</span> <span class="kw">new</span> <span class="at">Date</span>()<span class="op">;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="at">showDate</span>(today)<span class="op">;</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="kw">let</span> today <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>()<span class="op">;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a><span class="fu">showDate</span>(today)<span class="op">;</span></span></code></pre></div>
 <p>The date in the <code>h1</code> heading should change when the user picks a new date. The date should be formatted as the following example: “Wed Nov 07 2018”.</p>
 <h2 id="task-3---modify-an-interface-element-using-a-color-input">Task 3 - Modify an interface element using a “color” input</h2>
 <p>Store <code>const</code> references by ID to the <code>color</code> input field (<code>id="colour"</code> - note the spelling) and to the paragraph (<code>id="the-value"</code>).</p>

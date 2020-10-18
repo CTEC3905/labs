@@ -16,15 +16,8 @@ NOTE: (link to list of APIs)
 -->
 
 <!--
-- Lab 09: TBC PWAs??
-- Lab 10: TBC CSS grid?
+- Lab 09: optional PWAs???
+- Lab 10: optional ???
 -->
 
 The html versions are generated locally before commits via git hooks using Pandoc. These can then be linked directly to Blackboard.
-
----
-
-## TO DO
-
-- [x] add list of APIs to lab 07 (and in lecure)
-- [ ] decide whether to add optional exercises for labs 09 and 10

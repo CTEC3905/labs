@@ -31,7 +31,7 @@ Make sure you have added and committed any changes you've made to your master br
 
 Enter `git branch -a` to see the list of available branches.
 
-Now enter `git checkout css-transition` to change to the othe3r branch.
+Now enter `git checkout css-transition` to change to the other branch.
 
 Note how the **files in your local repository have changed**. Inspect the new code and run it in the browser. Use the guide in the readme file for this branch, and follow the links to get a Flickr API key, etc.
 
